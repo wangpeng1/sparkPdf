@@ -13,3 +13,8 @@ http://m.blog.csdn.net/article/details?id=51836036
 
 https://github.com/apache/spark/blob/master/examples/src/main/scala/org/apache/spark/examples/SparkTC.scala  解释
 http://blog.csdn.net/li385805776/article/details/20069879
+
+
+
+书http://product.dangdang.com/23811020.html#filtertype:2
+http://www.cnblogs.com/brucexia/p/5539285.html
