@@ -73,3 +73,5 @@ Beyond Piwik Web Analytics：https://github.com/skrusche63/spark-piwik
 Serves predictions via a REST API：https://github.com/SeldonIO/seldon-server
 https://github.com/zhuixun/learningspark
 Spark-Movie-Recommendation：https://github.com/yuriy-voderatskiy/Spark-Movie-Recommendation
+
+2. http://blog.javachen.com/2015/06/01/how-to-implement-collaborative-filtering-using-spark-als.html   ALS实现协同过滤 有详细的说明
