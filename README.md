@@ -75,3 +75,4 @@ https://github.com/zhuixun/learningspark
 Spark-Movie-Recommendation：https://github.com/yuriy-voderatskiy/Spark-Movie-Recommendation
 
 2. http://blog.javachen.com/2015/06/01/how-to-implement-collaborative-filtering-using-spark-als.html   ALS实现协同过滤 有详细的说明
+3. 配置参数 http://blog.javachen.com/2015/06/07/spark-configuration.html
