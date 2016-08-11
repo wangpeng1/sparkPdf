@@ -60,3 +60,16 @@ ALS会为每个用户和产品都设一个特征向量，这样用户向量与�
 如果id是字符串或者更大的数字，那么可以直接在ALS中使用id的哈希值，
 即使有两个用户或者产品映射到同一个Id上，总体结果依然会不错。还有一种办法是broadcast()一张
 从产品id到正兴致的表，来付给每个产品独特的id。
+
+http://blog.javachen.com/2015/04/17/spark-mllib-collaborative-filtering.html 协同过滤介绍了基本的概念和多个参数方法的说明
+
+使用Spark MLlib的ALS算法进行协同过滤，首先需要了解推荐的过程，然后需要根据测试不断修改训练测试，建立合理的模型，最后再给用户进行推荐商品，保存推荐结果。
+
+另外，在网上找到一些Spark做推荐的项目：
+
+提供Restfull接口的实时推荐：https://github.com/OndraFiedler/spark-recommender
+spark-elasticsearch-mllib：https://github.com/ebiznext/spark-elasticsearch-mllib
+Beyond Piwik Web Analytics：https://github.com/skrusche63/spark-piwik
+Serves predictions via a REST API：https://github.com/SeldonIO/seldon-server
+https://github.com/zhuixun/learningspark
+Spark-Movie-Recommendation：https://github.com/yuriy-voderatskiy/Spark-Movie-Recommendation
