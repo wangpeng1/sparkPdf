@@ -76,3 +76,4 @@ Spark-Movie-Recommendation：https://github.com/yuriy-voderatskiy/Spark-Movie-Re
 
 2. http://blog.javachen.com/2015/06/01/how-to-implement-collaborative-filtering-using-spark-als.html   ALS实现协同过滤 有详细的说明
 3. 配置参数 http://blog.javachen.com/2015/06/07/spark-configuration.html
+4.FPGrowth 关联规则挖掘http://www.tuicool.com/articles/FNnqIrn
