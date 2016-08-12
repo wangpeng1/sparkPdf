@@ -79,3 +79,4 @@ Spark-Movie-Recommendation：https://github.com/yuriy-voderatskiy/Spark-Movie-Re
 4.FPGrowth 关联规则挖掘http://www.tuicool.com/articles/FNnqIrn
 5. Spark 集成算法的数据格式即评估方法 以及作用解释 http://www.cnblogs.com/gnivor/p/5134632.html
 6. 分类 主要是贝叶斯分类 http://blog.selfup.cn/683.html
+7. 聚类算法之kmeans http://m.blog.csdn.net/article/details?id=49890667  http://my.oschina.net/xiaoluobutou/blog/680638
