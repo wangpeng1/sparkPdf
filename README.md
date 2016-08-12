@@ -78,3 +78,4 @@ Spark-Movie-Recommendation：https://github.com/yuriy-voderatskiy/Spark-Movie-Re
 3. 配置参数 http://blog.javachen.com/2015/06/07/spark-configuration.html
 4.FPGrowth 关联规则挖掘http://www.tuicool.com/articles/FNnqIrn
 5. Spark 集成算法的数据格式即评估方法 以及作用解释 http://www.cnblogs.com/gnivor/p/5134632.html
+6. 分类 主要是贝叶斯分类 http://blog.selfup.cn/683.html
