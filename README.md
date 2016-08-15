@@ -80,3 +80,21 @@ Spark-Movie-Recommendation：https://github.com/yuriy-voderatskiy/Spark-Movie-Re
 5. Spark 集成算法的数据格式即评估方法 以及作用解释 http://www.cnblogs.com/gnivor/p/5134632.html
 6. 分类 主要是贝叶斯分类 http://blog.selfup.cn/683.html
 7. 聚类算法之kmeans http://m.blog.csdn.net/article/details?id=49890667  http://my.oschina.net/xiaoluobutou/blog/680638
+8. 决策树 http://www.codeweblog.com/spark-decision-tree/
+有以下一些指标：精确度，召回率等。理解如下：
+假设原始样本中有两类，其中：
+1：总共有 P个类别为1的样本，假设类别1为正例。
+2：总共有N个类别为0 的样本，假设类别0为负例。
+经过分类后：
+3：有 TP个类别为1 的样本被系统正确判定为类别1，FN 个类别为1 的样本被系统误判定为类别 0，
+显然有P=TP+FN；
+4：有 FP 个类别为0 的样本被系统误判断定为类别1，TN 个类别为0 的样本被系统正确判为类别 0，
+显然有N=FP+TN；
+那么：
+精确度（Precision）：
+P = TP/(TP+FP) ; 反映了被分类器判定的正例中真正的正例样本的比重（
+准确率（Accuracy）
+A = (TP + TN)/(P+N) = (TP + TN)/(TP + FN + FP + TN);
+反映了分类器统对整个样本的判定能力——能将正的判定为正，负的判定为负
+召回率(Recall)，也称为 True Positive Rate:
+R = TP/(TP+FN) = 1 - FN/T; 反映了被正确判定的正例占总的正例的比重
