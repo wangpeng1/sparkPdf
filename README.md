@@ -98,3 +98,4 @@ A = (TP + TN)/(P+N) = (TP + TN)/(TP + FN + FP + TN);
 反映了分类器统对整个样本的判定能力——能将正的判定为正，负的判定为负
 召回率(Recall)，也称为 True Positive Rate:
 R = TP/(TP+FN) = 1 - FN/T; 反映了被正确判定的正例占总的正例的比重
+9.决策树 例子http://blog.selfup.cn/877.html
