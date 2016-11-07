@@ -99,3 +99,46 @@ A = (TP + TN)/(P+N) = (TP + TN)/(TP + FN + FP + TN);
 召回率(Recall)，也称为 True Positive Rate:
 R = TP/(TP+FN) = 1 - FN/T; 反映了被正确判定的正例占总的正例的比重
 9.决策树 例子http://blog.selfup.cn/877.html
+
+10 关联规则 http://paginas.fe.up.pt/~ec/ 相关课程
+   Support
+Every association rule has a support and a confidence. 
+“The support is the percentage of transactions that demonstrate the rule.”
+
+Example:  Database with transactions ( customer_# : item_a1, item_a2, … )
+
+   1:   1, 3, 5.
+   2:   1, 8, 14, 17, 12.
+   3:   4, 6, 8, 12, 9, 104.
+   4:   2, 1, 8.
+
+support  {8,12} = 2 (,or 50% ~ 2 of 4 customers)
+support {1, 5} = 1 (,or 25% ~ 1 of 4 customers )
+support {1}  = 3 (,or 75% ~ 3 of 4 customers)
+
+Support
+     An itemset is called frequent if its support is equal or greater than an agreed upon minimal value – the support threshold
+	add to previous example: 
+		if threshold 50%
+		then itemsets {8,12} and {1} called frequent
+  
+  Confidence
+Every association rule has a support and a confidence. 
+
+	An association rule is of the form:    X => Y
+		
+X => Y: if someone buys X, he also buys Y
+
+	The confidence is the conditional probability that, given X present in a transition , Y will also be present.
+
+	Confidence measure, by definition: 
+	Confidence(X=>Y) equals support(X,Y) / support(X) 
+We should only consider rules derived from itemsets with high support, and that also have high confidence.
+
+	“A rule with low confidence is not meaningful.”
+
+	Rules don’t explain anything, they just point out hard facts in data volumes.
+  Notice: High Confidence, Low Support.
+		-> Rule ( {9}  =>  {3} ) not meaningful 
+
+
