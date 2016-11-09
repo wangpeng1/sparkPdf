@@ -141,4 +141,33 @@ We should only consider rules derived from itemsets with high support, and that 
   Notice: High Confidence, Low Support.
 		-> Rule ( {9}  =>  {3} ) not meaningful 
 
+12 http://mojijs.com/2016/06/216402/index.html 
+   http://stackoverflow.com/questions/33215379/precision-recall-accuracy-calculation-for-decision-tree-in-scala-spark-environ
+   Accuracy(准确率), Precision(精确率)
+   Confusion Matrix
+    Predicted
+Actual  0   1   
+0   16877   251 
+1   2       20  
+The above is the Spark calculation of the Confusion Matrix.
 
+The arrangement,
+
+Predicted
+Actual  0   1
+    0   TN  FN
+    1   FP  TP
+So, Precision = TP/(TP+FP)=20/(20+2) =0.9091 Recall = TP/(TP+FN) = 20/(20+251) =0.074.
+
+Precision(精确率), Recall(召回率)
+.	实际为真	实际为假
+预测为真	TP	FP
+预测为假	FN	TN
+# 前面的T和F，代表预测是否正确
+# 后面的P和N，代表预测是真还是假
+TP：预测为真，正确了
+FP：预测为真，结果错了
+TN：预测为假，正确了
+FN：预测为假，结果错了
+Precision=TPTP+FP=预测为真，实际也为真预测为真的总数
+Recall=TPTP+FN=预测为真，实际也为真实际为真的总数
