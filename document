@@ -109,3 +109,14 @@ Bisecting k-means聚类算法的具体执行过程，描述如下所示：
 方差variance，计算连续数值。
 现在需要知道，前两者可以计算枚举类型的纯度，最后一个计算连续数据结合的纯度。都是值越大，越不纯，越小越纯。
 对于数值型目标而建立的决策树，成为回归树(regression tree).树的每一次拆分,为的是降低节点目标变量数值的方差(variance),而不是增加分类变量的纯度(purity).(当然,如果理解为一种属性的话,也可以说是增加变量的纯度)
+5. 决策树 computeCost 用来计算k 分类的簇数
+   http://www.ibm.com/developerworks/cn/opensource/os-cn-spark-practice4/
+   如何选择 K
+前面提到 K 的选择是 K-means 算法的关键，Spark MLlib 在 KMeansModel 类里提供了 computeCost 方法，该方法通过计算所有数据点到其最近的中心点的平方和来评估聚类的效果。一般来说，同样的迭代次数和算法跑的次数，这个值越小代表聚类的效果越好。但是在实际情况下，我们还要考虑到聚类结果的可解释性，不能一味的选择使 computeCost 结果值最小的那个 K。
+清单 3. K 选择示例代码片段
+val ks:Array[Int] = Array(3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
+ks.foreach(cluster => {
+ val model:KMeansModel = KMeans.train(parsedTrainingData, cluster,30,1)
+ val ssd = model.computeCost(parsedTrainingData)
+ println("sum of squared distances of points to their nearest center when k=" + cluster + " -> "+ ssd)
+})
