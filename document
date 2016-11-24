@@ -124,6 +124,7 @@ ks.foreach(cluster => {
 6.FPGrowth算法 关联规则
   http://www.itdadao.com/articles/c15a677397p0.html
 7 关系图 http://images.cnblogs.com/cnblogs_com/wgp13x/752560/o_mllib.jpg
+         https://my.oschina.net/u/2306127/blog/743217
 8 GaussianMixture 高斯混合模型 高斯混合给出每个数据点被分配到每个cluster的概率
    GMM和k-means其实是十分相似的，区别仅仅在于对GMM来说，我们引入了概率。说到这里，我想先补充一点东西。
    统计学习的模型有两种，一种是概率模型，一种是非概率模型。所谓概率模型，就是指我们要学习的模型的形式是P(Y|X)，
@@ -135,3 +136,12 @@ ks.foreach(cluster => {
    而估计的模型是几个高斯模型加权之和（具体是几个要在模型训练前建立好）。每个高斯模型就代表了一个类（一个Cluster）。
    对样本中的数据分别在几个高斯模型上投影，就会分别得到在各个类上的概率。然后我们可以选取概率最大的类所为判决结果
    http://blog.csdn.net/jwh_bupt/article/details/7663885
+9  GradientBoostedTrees 
+   随机森林和GBTs都是集成学习算法，它们通过集成多棵决策树来实现强分类器。
+   集成学习方法就是基于其他的机器学习算法，并把它们有效的组合起来的一种机器学习算法。组合产生的算法相比其中任何一种算法模型更强大、准确。
+   随机森林和梯度提升树(GBTs)。两者之间主要差别在于每棵树训练的顺序。
+   随机森林通过对数据随机采样来单独训练每一棵树。这种随机性也使得模型相对于单决策树更健壮，且不易在训练集上产生过拟合。
+   GBTs则一次只训练一棵树，后面每一棵新的决策树逐步矫正前面决策树产生的误差。随着树的添加，模型的表达力也愈强。
+   http://www.aiuxian.com/article/p-2484084.html
+   http://lxw1234.com/archives/2016/01/595.htm
+  
