@@ -123,3 +123,4 @@ ks.foreach(cluster => {
 
 6.FPGrowth算法 关联规则
   http://www.itdadao.com/articles/c15a677397p0.html
+7 关系图 http://images.cnblogs.com/cnblogs_com/wgp13x/752560/o_mllib.jpg
