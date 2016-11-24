@@ -120,3 +120,6 @@ ks.foreach(cluster => {
  val ssd = model.computeCost(parsedTrainingData)
  println("sum of squared distances of points to their nearest center when k=" + cluster + " -> "+ ssd)
 })
+
+6.FPGrowth算法 关联规则
+  http://www.itdadao.com/articles/c15a677397p0.html
