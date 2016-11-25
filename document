@@ -182,3 +182,20 @@ Hypothesis testing，假设检验。Spark目前支持皮尔森卡方检测（Pea
 独立性检测
 独立性检测，independence test，验证从两个变量抽出的配对观察值组是否互相独立。
 其虚无假设是：两个变量呈统计独立性。http://blog.selfup.cn/1157.html
+11 kolmogorovSmirnovTest
+   KolmogorovSmirnovTest[data] 
+   使用 Kolmogorov-Smirnov 检验判断 data 是否服从正态分布.
+   KolmogorovSmirnovTest[data,dist] 
+   使用 Kolmogorov-Smirnov 检验判断 data 是否服从 dist 分布.
+   KolmogorovSmirnovTest[data,dist,"property"] 
+   返回 "property" 的值.
+    在统计学中，柯尔莫可洛夫-斯米洛夫检验基于累计分布函数，用以检验两个经验分布是否不同或一个经验分布与另一个理想分布是否不同。
+
+在进行累计概率（cumulative
+probability）统计的时候，你怎么知道组之间是否有显著性差异？有人首先想到单因素方差分析或双尾检验（2 tailed test）。
+其实这些是不准确的，最好采用Kolmogorov-Smirnov test（柯尔莫诺夫-斯米尔诺夫检验）
+来分析变量是否符合某种分布或比较两组之间有无显著性差异。
+Kolmogorov-Smirnov检验
+它是检验单一样本是否来自某一特定分布的方法。比如检验一组数据是否为正态分布。
+它的检验方法是以样本数据的累计频数分布与特定理论分布比较，若两者间的差距很小，则推论该样本取自某特定分布族。
+http://www.aichengxu.com/view/6860682
