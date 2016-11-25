@@ -154,3 +154,31 @@ ks.foreach(cluster => {
 二分类 线性SVM, 逻辑回归，决策树，随机森林，GBDT，朴素贝叶斯 
 多分类 决策树，随机森林，朴素贝叶斯 
 回归 线性最小二乘法，Lasso, 岭回归，决策树，随机森林，GBDT，保序回归
+10 HypothesisTesting 假设检验
+   MLlib当前支持用于判断拟合度或者独立性的Pearson卡方(chi-squared ( χ2) )检验。
+   不同的输入类型决定了是做拟合度检验还是独立性检验。拟合度检验要求输入为Vector, 独立性检验要求输入是Matrix。
+    //卡方检验
+    val v1 = Vectors.dense(43.0, 9.0)
+    val v2 = Vectors.dense(44.0, 4.0)   
+val c1 = Statistics.chiSqTest(v1, v2)
+执行结果：
+c1: org.apache.spark.mllib.stat.test.ChiSqTestResult =
+Chi squared test summary:
+method: pearson
+degrees of freedom = 1
+statistic = 5.482517482517483
+pValue = 0.01920757707591003
+Strong presumption against null hypothesis: observed follows the same distribution as expected..
+结果返回：统计量：pearson、自由度：1、值：5.48、概率：0.019。
+Hypothesis testing，假设检验。Spark目前支持皮尔森卡方检测（Pearson’s chi-squared tests），包括适配度检定和独立性检定。
+
+皮尔森卡方检测
+皮尔森卡方检测是最著名的卡方检测方法之一，一般提到卡方检测时若无特殊说明则代表使用的是皮尔森卡方检测。
+皮尔森卡方检测可以用来进行适配度检测和独立性检测。
+适配度检测
+适配度检测，Goodness of Fit test，验证一组观察值的次数分配是否异于理论上的分配。
+其 H0H0 假设（虚无假设，null hypothesis）为一个样本中已发生事件的次数分配会服从某个特定的理论分配。
+通常情况下这个特定的理论分配指的是均匀分配，目前Spark默认的是均匀分配。
+独立性检测
+独立性检测，independence test，验证从两个变量抽出的配对观察值组是否互相独立。
+其虚无假设是：两个变量呈统计独立性。http://blog.selfup.cn/1157.html
