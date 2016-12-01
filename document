@@ -220,3 +220,5 @@ http://www.aichengxu.com/view/6860682
     对每一个观察数拟合出的多个概率密度分布函数，取平均。 如果某些数是比较重要的，则可以取加权平均。
    核密度的估计并不是找到真正的分布函数。
    http://www.cnblogs.com/skyEva/p/5563662.html
+14  LDA http://blog.csdn.net/pirage/article/details/50219323
+    http://www.infocool.net/kb/Spark/201610/205164.html
