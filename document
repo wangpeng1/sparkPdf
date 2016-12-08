@@ -238,3 +238,4 @@ initializationMode: 初始化模式：默认值“random”，表示使用一个
 也可以是“degree”，表示使用归一化的相似度和（作为顶点的聚类属性）
 22  PrefixSpanExample 序列模式算法 http://blog.sina.com.cn/s/blog_6e85bf420100o66q.html
 23  RandomRDDs  http://blog.csdn.net/xubo245/article/details/51485568 随机产生
+    https://taiwansparkusergroup.gitbooks.io/spark-programming-guide-zh-tw/content/mllib/svms.html 
