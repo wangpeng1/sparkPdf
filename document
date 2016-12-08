@@ -236,3 +236,4 @@ k:  聚簇的数量
 maxIterations: 最大迭代次数
 initializationMode: 初始化模式：默认值“random”，表示使用一个随机向量作为顶点的聚类属性；
 也可以是“degree”，表示使用归一化的相似度和（作为顶点的聚类属性）
+22  PrefixSpanExample 序列模式算法 http://blog.sina.com.cn/s/blog_6e85bf420100o66q.html
