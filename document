@@ -239,3 +239,4 @@ initializationMode: 初始化模式：默认值“random”，表示使用一个
 22  PrefixSpanExample 序列模式算法 http://blog.sina.com.cn/s/blog_6e85bf420100o66q.html
 23  RandomRDDs  http://blog.csdn.net/xubo245/article/details/51485568 随机产生
     https://taiwansparkusergroup.gitbooks.io/spark-programming-guide-zh-tw/content/mllib/svms.html 
+24  RankingMetricsExample http://itindex.net/detail/54005-spark-als-%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4
