@@ -172,3 +172,5 @@ FN：预测为假，结果错了
 Precision=TPTP+FP=预测为真，实际也为真预测为真的总数
 Recall=TPTP+FN=预测为真，实际也为真实际为真的总数
 13 svm 参数详细说明http://www.thinkface.cn/thread-4451-1-1.html
+
+http://blog.163.com/jey_df/blog/static/1825501612013411105655629/ 均方根 均方根误差
